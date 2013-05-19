@@ -1,0 +1,23 @@
+<%= form_for(@tagsearch) do |f| %>
+  <% if @tagsearch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tagsearch.errors.count, "error") %> prohibited this tagsearch from being saved:</h2>
+
+      <ul>
+      <% @tagsearch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="well" style="width:495px; margin:90px auto 10px;padding-top:30px;">
+  <%= f.label :number,'返回的推荐数量',class:'pull-left btn' %>
+  <%= f.number_field :number, class:"span4 pull-right" %>
+  <div class="input-append">
+    <%= f.text_field :tag, class:'span4', id:'appendedInputButton', placeholder:'填写电影类别标签……', style:'height:26px;' %>
+    <%= f.submit '去看看推荐结果', class:'btn btn-info btn-large' %>
+  </div>
+</div>
+
+<% end %>

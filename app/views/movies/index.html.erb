@@ -1,0 +1,35 @@
+<h2 class="title-border-left">
+    你的选择记录
+</h2>
+
+<hr>
+
+<table class="table table-bordered table-hover">
+  <tr>
+    <th class="t-center">ID</th>
+    <th class="t-center span2">第一部</th>
+    <th class="t-center span2">第二部</th>
+    <th class="t-center span2">第三部</th>
+    <th class="t-center span2">第四部</th>
+    <th class="t-center span2">第五部</th>
+    <th class="t-center"></th>
+    <th class="t-center"></th>
+  </tr>
+
+<% @movies.each do |movie| %>
+  <tr>
+    <td class="t-center"><%= movie.id %></td>
+    <td class="t-center"><%= movie.one %></td>
+    <td class="t-center"><%= movie.two %></td>
+    <td class="t-center"><%= movie.three %></td>
+    <td class="t-center"><%= movie.four %></td>
+    <td class="t-center"><%= movie.five %></td>
+    <td class="t-center"><%= link_to '查看推荐', movie, class:"btn btn-info btn-block" %></td>
+    <td class="t-center"><%= link_to '删除记录', movie, class:"btn btn-danger btn-block", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '找找电影', new_movie_path, class:"btn btn-large btn-info" %>

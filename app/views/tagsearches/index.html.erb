@@ -1,0 +1,31 @@
+<h2 class="title-border-left">
+    你的标签选择记录
+</h2>
+
+<hr>
+
+<table class="table table-bordered">
+  <tr>
+    <th class="t-center">ID</th>
+    <th class="t-center">推荐数量</th>
+    <th class="t-center span8">标签</th>
+    <th class="t-center"></th>
+    <th class="t-center"></th>
+    <th class="t-center"></th>
+  </tr>
+
+<% @tagsearches.each do |tagsearch| %>
+  <tr>
+    <td class="t-center"><%= tagsearch.id %></td>
+    <td class="t-center"><%= tagsearch.number %></td>
+    <td class="t-center"><button class="btn btn-block"><%= tagsearch.tag %></button></td>
+    <td class="t-center"><%= link_to '显示推荐', tagsearch, class:"btn btn-info btn-block" %></td>
+    <td class="t-center"><%= link_to '编辑标签', edit_tagsearch_path(tagsearch), class:"btn btn-success btn-block" %></td>
+    <td class="t-center"><%= link_to '删除记录', tagsearch, class:"btn btn-danger btn-block", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '妹子给个标签', new_tagsearch_path, class:"btn btn-info" %>

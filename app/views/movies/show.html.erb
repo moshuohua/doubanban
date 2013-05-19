@@ -1,0 +1,693 @@
+<h5 class="title-border-left">
+    你选择的5部电影
+</h5>
+
+<div class=" well">
+
+  <% if @movie.one.to_s == '阿凡达' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'afanda.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '霸王别姬' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'bawangbieji.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '悲惨世界' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'beicanshijie.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '雏菊' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'chuju.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '盗梦空间' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'daomengkongjian.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '碟中谍4' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'diezhongdie.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '告白' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'gaobai.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '沉默的羔羊' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'gaoyang.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '海豚湾' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'haitunwan.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '哈利波特7' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'halibote.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '黑皮书' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'heipishu.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '安娜·卡列尼娜' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'kalienina.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '那些年我们一起追的女孩' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'nvhai.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '千与千寻' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'qianyuqianxun.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '擒爱记' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'qinaiji.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '七宗罪' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'qizongzui' %>
+  <% elsif @movie.one.to_s == '那个杀手不太冷' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'shashou.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '神探' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'shentan.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '死寂' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'siji.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '泰囧' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'taijiong.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '泰坦尼克' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'taitannike.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '机器人总动员' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'wali.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '危险关系' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'weixianguanxi' %>
+  <% elsif @movie.one.to_s == '无间道' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'wujiandao.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '肖申克的救赎' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'xiaoshenke.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '辛德勒的名单' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'xindele.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '一天' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'yitian.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '雨人' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'yuren.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '指环王III' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'zhihuanwang.jpg', class:"rrr" %>
+  <% elsif @movie.one.to_s == '纸人' %>
+    <button class="btn "><%= @movie.one %></button>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% else %>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% end %>
+
+
+
+  <% if @movie.two.to_s == '阿凡达' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'afanda.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '霸王别姬' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'bawangbieji.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '悲惨世界' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'beicanshijie.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '雏菊' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'chuju.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '盗梦空间' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'daomengkongjian.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '碟中谍4' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'diezhongdie.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '告白' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'gaobai.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '沉默的羔羊' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'gaoyang.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '海豚湾' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'haitunwan.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '哈利波特7' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'halibote.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '黑皮书' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'heipishu.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '安娜·卡列尼娜' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'kalienina.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '那些年我们一起追的女孩' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'nvhai.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '千与千寻' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'qianyuqianxun.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '擒爱记' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'qinaiji.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '七宗罪' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'qizongzui' %>
+  <% elsif @movie.two.to_s == '那个杀手不太冷' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'shashou.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '神探' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'shentan.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '死寂' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'siji.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '泰囧' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'taijiong.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '泰坦尼克' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'taitannike.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '机器人总动员' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'wali.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '危险关系' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'weixianguanxi' %>
+  <% elsif @movie.two.to_s == '无间道' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'wujiandao.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '肖申克的救赎' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'xiaoshenke.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '辛德勒的名单' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'xindele.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '一天' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'yitian.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '雨人' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'yuren.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '指环王III' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'zhihuanwang.jpg', class:"rrr" %>
+  <% elsif @movie.two.to_s == '纸人' %>
+    <button class="btn "><%= @movie.two %></button>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% else %>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% end %>
+
+
+
+  <% if @movie.three.to_s == '阿凡达' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'afanda.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '霸王别姬' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'bawangbieji.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '悲惨世界' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'beicanshijie.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '雏菊' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'chuju.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '盗梦空间' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'daomengkongjian.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '碟中谍4' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'diezhongdie.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '告白' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'gaobai.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '沉默的羔羊' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'gaoyang.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '海豚湾' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'haitunwan.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '哈利波特7' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'halibote.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '黑皮书' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'heipishu.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '安娜·卡列尼娜' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'kalienina.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '那些年我们一起追的女孩' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'nvhai.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '千与千寻' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'qianyuqianxun.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '擒爱记' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'qinaiji.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '七宗罪' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'qizongzui' %>
+  <% elsif @movie.three.to_s == '那个杀手不太冷' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'shashou.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '神探' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'shentan.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '死寂' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'siji.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '泰囧' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'taijiong.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '泰坦尼克' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'taitannike.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '机器人总动员' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'wali.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '危险关系' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'weixianguanxi' %>
+  <% elsif @movie.three.to_s == '无间道' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'wujiandao.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '肖申克的救赎' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'xiaoshenke.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '辛德勒的名单' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'xindele.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '一天' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'yitian.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '雨人' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'yuren.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '指环王III' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'zhihuanwang.jpg', class:"rrr" %>
+  <% elsif @movie.three.to_s == '纸人' %>
+    <button class="btn "><%= @movie.three %></button>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% else %>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% end %>
+
+
+
+  <% if @movie.four.to_s == '阿凡达' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'afanda.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '霸王别姬' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'bawangbieji.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '悲惨世界' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'beicanshijie.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '雏菊' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'chuju.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '盗梦空间' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'daomengkongjian.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '碟中谍4' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'diezhongdie.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '告白' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'gaobai.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '沉默的羔羊' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'gaoyang.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '海豚湾' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'haitunwan.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '哈利波特7' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'halibote.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '黑皮书' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'heipishu.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '安娜·卡列尼娜' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'kalienina.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '那些年我们一起追的女孩' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'nvhai.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '千与千寻' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'qianyuqianxun.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '擒爱记' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'qinaiji.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '七宗罪' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'qizongzui' %>
+  <% elsif @movie.four.to_s == '那个杀手不太冷' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'shashou.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '神探' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'shentan.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '死寂' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'siji.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '泰囧' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'taijiong.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '泰坦尼克' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'taitannike.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '机器人总动员' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'wali.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '危险关系' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'weixianguanxi' %>
+  <% elsif @movie.four.to_s == '无间道' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'wujiandao.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '肖申克的救赎' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'xiaoshenke.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '辛德勒的名单' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'xindele.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '一天' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'yitian.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '雨人' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'yuren.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '指环王III' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'zhihuanwang.jpg', class:"rrr" %>
+  <% elsif @movie.four.to_s == '纸人' %>
+    <button class="btn "><%= @movie.four %></button>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% else %>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% end %>
+
+
+
+  <% if @movie.five.to_s == '阿凡达' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'afanda.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '霸王别姬' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'bawangbieji.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '悲惨世界' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'beicanshijie.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '雏菊' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'chuju.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '盗梦空间' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'daomengkongjian.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '碟中谍4' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'diezhongdie.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '告白' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'gaobai.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '沉默的羔羊' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'gaoyang.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '海豚湾' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'haitunwan.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '哈利波特7' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'halibote.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '黑皮书' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'heipishu.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '安娜·卡列尼娜' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'kalienina.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '那些年我们一起追的女孩' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'nvhai.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '千与千寻' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'qianyuqianxun.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '擒爱记' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'qinaiji.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '七宗罪' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'qizongzui' %>
+  <% elsif @movie.five.to_s == '那个杀手不太冷' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'shashou.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '神探' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'shentan.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '死寂' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'siji.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '泰囧' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'taijiong.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '泰坦尼克' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'taitannike.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '机器人总动员' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'wali.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '危险关系' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'weixianguanxi' %>
+  <% elsif @movie.five.to_s == '无间道' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'wujiandao.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '肖申克的救赎' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'xiaoshenke.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '辛德勒的名单' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'xindele.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '一天' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'yitian.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '雨人' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'yuren.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '指环王III' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'zhihuanwang.jpg', class:"rrr" %>
+  <% elsif @movie.five.to_s == '纸人' %>
+    <button class="btn "><%= @movie.five %></button>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% else %>
+    <%= image_tag 'zhiren.jpg', class:"rrr" %>
+  <% end %>
+
+</div>
+
+<div class=" well">
+  <button class="btn btn-large btn-block btn-info">
+    根据您的喜好，我们为您推荐30部电影，希望您能喜欢，谢谢！
+  </button>
+</div>
+
+<div class="">
+  <ul class="thumbnails">
+  <!-- 1 -->
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_one["subjects"][2]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_one["subjects"][2]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_one["subjects"][6]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_one["subjects"][6]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_one["subjects"][3]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_one["subjects"][3]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_one["subjects"][4]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_one["subjects"][4]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_one["subjects"][1]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_one["subjects"][1]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_one["subjects"][5]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_one["subjects"][5]["title"] %></button>
+      </div>
+    </li>
+  <!-- 2 -->
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_two["subjects"][0]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_two["subjects"][0]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_two["subjects"][3]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_two["subjects"][3]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_two["subjects"][1]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_two["subjects"][1]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_two["subjects"][5]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_two["subjects"][5]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_two["subjects"][2]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_two["subjects"][2]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_two["subjects"][6]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_two["subjects"][6]["title"] %></button>
+      </div>
+    </li>
+  <!-- 3 -->
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_three["subjects"][3]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_three["subjects"][3]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_three["subjects"][2]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_three["subjects"][2]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_three["subjects"][1]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_three["subjects"][1]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_three["subjects"][5]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_three["subjects"][5]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_three["subjects"][4]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_three["subjects"][4]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_three["subjects"][6]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_three["subjects"][6]["title"] %></button>
+      </div>
+    </li>
+  <!-- 4 -->
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_four["subjects"][0]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_four["subjects"][0]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_four["subjects"][3]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_four["subjects"][3]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_four["subjects"][1]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_four["subjects"][1]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_four["subjects"][5]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_four["subjects"][5]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_four["subjects"][2]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_four["subjects"][2]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_four["subjects"][6]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_four["subjects"][6]["title"] %></button>
+      </div>
+    </li>
+  <!-- 5 -->
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_five["subjects"][0]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_five["subjects"][0]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_five["subjects"][3]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_five["subjects"][3]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_five["subjects"][1]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_five["subjects"][1]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_five["subjects"][5]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_five["subjects"][5]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_five["subjects"][2]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_five["subjects"][2]["title"] %></button>
+      </div>
+    </li>
+    <li class="span2">
+      <div class="thumbnail">
+          <%= image_tag @result_five["subjects"][6]["images"]["large"] %>
+          <button class="btn btn-block"><%= @result_five["subjects"][6]["title"] %></button>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+<script type="text/javascript">
+  $(function(){
+    var $container = $('.thumbnails');
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.span2'
+      });
+    });
+  });
+</script>

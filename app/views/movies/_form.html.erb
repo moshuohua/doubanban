@@ -1,0 +1,74 @@
+<%= form_for(@movie) do |f| %>
+  <% if @movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+
+      <ul>
+      <% @movie.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <% movie_array = [['阿凡达','阿凡达'], ['霸王别姬','霸王别姬'],['悲惨世界','悲惨世界'],['雏菊','雏菊'],['盗梦空间','盗梦空间'],['碟中谍4','碟中谍4'], ['告白','告白'], ['沉默的羔羊','沉默的羔羊'], ['海豚湾','海豚湾'], ['哈利波特7','哈利波特7'], ['黑皮书','黑皮书'], ['安娜·卡列尼娜','安娜·卡列尼娜'], ['那些年我们一起追的女孩','那些年我们一起追的女孩'], ['千与千寻','千与千寻'], ['擒爱记','擒爱记'], ['七宗罪','七宗罪'], ['那个杀手不太冷','那个杀手不太冷'], ['神探','神探'], ['死寂','死寂'], ['泰囧','泰囧'], ['泰坦尼克','泰坦尼克'], ['机器人总动员','机器人总动员'], ['危险关系','危险关系'], ['无间道','无间道'], ['肖申克的救赎','肖申克的救赎'], ['辛德勒的名单','辛德勒的名单'], ['一天','一天'], ['雨人','雨人'], ['指环王III','指环王III'], ['纸人','纸人']] %>
+
+    <div class="span3 well">
+      <%= f.select :one, options_for_select(movie_array), {}, :id => 'e1',:class => 's' %>
+      <%= f.select :two, options_for_select(movie_array), {}, :id => 'e2',:class => 's' %>
+      <%= f.select :three, options_for_select(movie_array), {}, :id => 'e3',:class => 's' %>
+      <%= f.select :four, options_for_select(movie_array), {}, :id => 'e4',:class => 's' %>
+      <%= f.select :five, options_for_select(movie_array), {}, :id => 'e5',:class => 's' %>
+
+      <%= f.submit '够了，去找找看', class:'btn btn-danger btn-block btn-large', style:"margin-top:70px;" %>
+      <%= link_to '少年啊，返回！', movies_path, class:"btn btn-info btn-block btn-large" %>
+    </div>
+
+    <div class="scrollable span8" style="height: 500px; overflow-y: auto;">
+      <%= image_tag 'afanda.jpg',class: "r" %>
+      <%= image_tag 'bawangbieji.jpg',class: "r" %>
+      <%= image_tag 'beicanshijie.jpg',class: "r" %>
+      <%= image_tag 'chuju.jpg',class: "r" %>
+      <%= image_tag 'daomengkongjian.jpg',class: "r" %>
+      <%= image_tag 'diezhongdie.jpg' %>
+      <hr>
+      <%= image_tag 'gaobai.jpg',class: "rr" %>
+      <%= image_tag 'gaoyang.jpg' %>
+      <%= image_tag 'haitunwan.jpg',class: "rr" %>
+      <%= image_tag 'halibote.jpg' %>
+      <%= image_tag 'heipishu.jpg',class: "rr" %>
+      <%= image_tag ('kalienina.jpg') %>
+      <hr>
+      <%= image_tag 'nvhai.jpg',class: "r" %>
+      <%= image_tag 'qianyuqianxun.jpg',class: "r" %>
+      <%= image_tag 'qinaiji.jpg',class: "r" %>
+      <%= image_tag ('qizongzui.jpg') %>
+      <%= image_tag ('shashou.jpg') %>
+      <%= image_tag ('shentan.jpg') %>
+      <hr>
+      <%= image_tag 'siji.jpg',class: "r" %>
+      <%= image_tag 'taijiong.jpg',class: "r" %>
+      <%= image_tag 'taitannike.jpg',class: "r" %>
+      <%= image_tag 'wali.jpg',class: "r" %>
+      <%= image_tag 'weixianguanxi.jpg',class: "r" %>
+      <%= image_tag 'wujiandao.jpg' %>
+      <hr>
+      <%= image_tag 'xiaoshenke.jpg',class: "r" %>
+      <%= image_tag 'xindele.jpg',class: "r" %>
+      <%= image_tag 'yitian.jpg',class: "r" %>
+      <%= image_tag 'yuren.jpg',class: "r" %>
+      <%= image_tag 'zhihuanwang.jpg',class: "r" %>
+      <%= image_tag 'zhiren.jpg',class: "r" %>
+    </div>
+
+<% end %>
+
+<script>
+    $(document).ready(function() {
+        $("#e1").select2();
+        $("#e2").select2();
+        $("#e3").select2();
+        $("#e4").select2();
+        $("#e5").select2();
+    });
+</script>

@@ -1,0 +1,35 @@
+
+<ul class="thumbnails">
+  <% a = 0 %>
+  <% while @tagsearch.number > a %>
+  	<li class="span3">
+    	<div class="thumbnail">
+      		<%= image_tag @result_tag['subjects'][a]['images']['large'] %>
+          <hr>
+      		<a class="btn btn-block" href="http://www.baidu.com/s?wd=<%= @result_tag['subjects'][a]['title'] %>百度影音">
+            <%= @result_tag['subjects'][a]['title'] %></a>
+    	</div>
+  	</li>
+    <% a = a + 1 %>
+  <% end %>
+</ul>
+
+<div class="well pull-left" style="width:495px; margin:5px auto 0px;">
+  <%= link_to 'Edit', edit_tagsearch_path(@tagsearch),class:'btn btn-block btn-success' %>
+</div>
+
+<div class="well pull-right" style="width:495px; margin:5px auto 0px;">
+  <%= link_to 'Back', tagsearches_path,class:'btn btn-block btn-danger' %>
+</div>
+
+<script type="text/javascript">
+  $(function(){
+    var $container = $('.thumbnails');
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.span3'
+      });
+    });
+  });
+</script>
+
